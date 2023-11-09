@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#caja {
+  width: 100%;
+  margin: 50px;
+}
+#caja .input {
+  border: none;
+  border-bottom: 3px solid #3d70b2;
+  outline: none;
+  margin: 0px auto;
+}
+#caja .input:focus {
+  height: 25px;
+  transform: scale(1.2, 1.2);
+  transition: 100ms;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#caja .input-error {
+  border: none;
+  border-bottom: 3px solid #e71d32;
+  outline: none;
+  color: #e71d32;
+}
+#caja .input-error:focus {
+  height: 25px;
+  transform: scale(1.2, 1.2);
+  transition: 100ms;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#caja .input-correcto {
+  border: none;
+  border-bottom: 3px solid #5aa700;
+  outline: none;
+  color: #5aa700;
+}
+#caja .input-correcto:focus {
+  height: 25px;
+  transform: scale(1.2, 1.2);
+  transition: 100ms;
+  margin-right: 20px;
+  margin-left: 20px;
+}/*# sourceMappingURL=style.css.map */

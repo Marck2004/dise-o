@@ -1,0 +1,15 @@
+$amarillo : yellow;
+$rojo :red;
+$ancho:400px;
+$alto:100px;
+
+.red{
+    background-color: $rojo;
+    width: $ancho;
+    height: $alto;
+}
+.yellow{
+    background-color: $amarillo;
+    width: $ancho;
+    height: $alto;
+}
