@@ -20,7 +20,25 @@
         transition: 100ms;
         margin-right: 20px;
         margin-left: 20px;
+        &:nth-last-child(n){
+            margin-top:20px;
+        }
+      
     };
+}
+@mixin crearBotones($colors){
+    margin: 20px;
+    border: none;
+    background-color: $colors;
+    height: 50px;
+    width: 100px;
+    &:hover{
+        transition: 3000ms;
+        transform: rotate(360deg);
+        background-color: $colors;
+        border-radius: 50%;
+        border-style: dashed;
+    }
 }
 
 *{
@@ -44,5 +62,24 @@
         @include crearInput($succes);
         color: $succes;
     }
-
+    .botones{
+        @include crearBotones($secondary);
+        color: $warning;
+    }
+    .botones-verde{
+        @include crearBotones($succes);
+        color: $dark;
+    }
+    .botones-negro{
+        @include crearBotones($dark);
+        color: $tertiary;
+    }
+    .botones-error{
+        @include crearBotones($error);
+        color: $info;
+    }
+    .botones-blanco{
+        @include crearBotones($warning);
+        color: $error;
+    }
 }

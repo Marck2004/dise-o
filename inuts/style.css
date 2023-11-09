@@ -20,6 +20,9 @@
   margin-right: 20px;
   margin-left: 20px;
 }
+#caja .input:focus:nth-last-child(n) {
+  margin-top: 20px;
+}
 #caja .input-error {
   border: none;
   border-bottom: 3px solid #e71d32;
@@ -33,6 +36,9 @@
   margin-right: 20px;
   margin-left: 20px;
 }
+#caja .input-error:focus:nth-last-child(n) {
+  margin-top: 20px;
+}
 #caja .input-correcto {
   border: none;
   border-bottom: 3px solid #5aa700;
@@ -45,4 +51,82 @@
   transition: 100ms;
   margin-right: 20px;
   margin-left: 20px;
+}
+#caja .input-correcto:focus:nth-last-child(n) {
+  margin-top: 20px;
+}
+#caja .botones {
+  margin: 20px;
+  border: none;
+  background-color: #5596e6;
+  height: 50px;
+  width: 100px;
+  color: #efc100;
+}
+#caja .botones:hover {
+  transition: 3000ms;
+  transform: rotate(360deg);
+  background-color: #5596e6;
+  border-radius: 50%;
+  border-style: dashed;
+}
+#caja .botones-verde {
+  margin: 20px;
+  border: none;
+  background-color: #5aa700;
+  height: 50px;
+  width: 100px;
+  color: #152934;
+}
+#caja .botones-verde:hover {
+  transition: 3000ms;
+  transform: rotate(360deg);
+  background-color: #5aa700;
+  border-radius: 50%;
+  border-style: dashed;
+}
+#caja .botones-negro {
+  margin: 20px;
+  border: none;
+  background-color: #152934;
+  height: 50px;
+  width: 100px;
+  color: #41d6c3;
+}
+#caja .botones-negro:hover {
+  transition: 3000ms;
+  transform: rotate(360deg);
+  background-color: #152934;
+  border-radius: 50%;
+  border-style: dashed;
+}
+#caja .botones-error {
+  margin: 20px;
+  border: none;
+  background-color: #e71d32;
+  height: 50px;
+  width: 100px;
+  color: #5aaafa;
+}
+#caja .botones-error:hover {
+  transition: 3000ms;
+  transform: rotate(360deg);
+  background-color: #e71d32;
+  border-radius: 50%;
+  border-style: dashed;
+}
+#caja .botones-blanco {
+  margin: 20px;
+  border: none;
+  background-color: #efc100;
+  height: 50px;
+  width: 100px;
+  color: #e71d32;
+}
+#caja .botones-blanco:hover {
+  transition: 3000ms;
+  transform: rotate(360deg);
+  background-color: #efc100;
+  border-radius: 50%;
+  border-style: dashed;
 }/*# sourceMappingURL=style.css.map */
