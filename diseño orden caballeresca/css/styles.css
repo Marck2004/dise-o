@@ -4069,6 +4069,9 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
+.custom-margin-top {
+  margin-top: 50px; /* Ajusta el valor según tus necesidades */
+}
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-wrap: nowrap;
