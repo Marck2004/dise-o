@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>TravellRoulette</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<meta name="theme-color" content="#712cf9">
+
+  <style>
+    body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #intro {
+            background-image: url('./assets/img/fotoFondoLogIn.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        #btnSesion{
+          background-color: bisque;
+          color: var(--bs-body-color);
+          border: 0px solid bisque;
+        }
+        #btnSesion:hover{
+          background-color: rgb(242, 194, 135);
+        }
+        #linkContrasena{
+          text-decoration: none;
+        }
+        #buscar,#btnBuscar{
+          border-radius: 20px;
+        }
+
+  </style>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink bg-black" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand font-bold text-white" href="#page-top">TravellRoulette</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-bold text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">Acceder</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="./registro.html">Registro</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="contacto.html">Contacto</a></li>
+            </ul>
+            <form action="" class="flex items-center justify-end">
+                <input type="search" name="buscar" id="buscar" class="border border-white rounded-l-md px-3 py-2 focus:outline-none bg-white text-black" placeholder="Buscar">
+                <input type="submit" id="btnBuscar" value="Buscar" class="bg-white text-black rounded-r-md px-4 py-2 cursor-pointer ">
+            </form>
+            
+        </div>
+    </div>
+</nav>
+
+  <div id="intro" class="bg-image shadow-2-strong">
+   <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-md-8">
+            <form class="bg-white rounded-5 shadow-5-strong p-5">
+            
+                <div class="form-outline mb-4">
+                    <input type="email" id="form1Example1" class="form-control" />
+                    <label class="form-label" for="form1Example1">Email</label>
+                </div>
+            
+                <div class="form-outline mb-4">
+                    <input type="password" id="form1Example3" class="form-control" />
+                    <label class="form-label" for="form1Example3">Contraseña</label>
+                </div>
+
+            
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="form1Example5" checked />
+                            <label class="form-check-label" for="form1Example5">Recuerdame</label>
+                        </div>
+                    </div>
+            
+                    <div class="col text-center">
+                        <a href="#!" id="linkContrasena">Olvido Contraseña?</a>
+                    </div>
+                </div>
+                <a href="index.html" class="btn btn-primary btn-block" id="btnSesion">Iniciar Sesion</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
