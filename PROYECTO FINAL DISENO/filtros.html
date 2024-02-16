@@ -29,9 +29,13 @@
             background-size: cover;
             cursor: pointer;
         }
-        .cartaHover:hover{
-          height: 1000px;
+        .card{
+          margin-left: 30px;
         }
+        .card:hover {
+          transform: translateY(-10px);
+          transition: 300ms;
+}
   </style>
   </head>
 <body>
@@ -52,8 +56,8 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link font-bold text-white" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link font-bold text-white" href="sobreNosotros.html">Sobre nosotros</a></li>
-                <li class="nav-item"><a class="nav-link font-bold text-white" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="filtros.html">Filtros</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="ciudades.html">Ciudades</a></li>
                 <li class="nav-item"><a class="nav-link font-bold text-white" href="contacto.html">Contacto</a></li>
             </ul>
             <form action="" class="flex items-center justify-end">
@@ -69,8 +73,8 @@
     <h2 class="mt-20">¿Como vas a viajar?</h2>
 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col" >
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/viajeSolo.jpg');">
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"  style="background-image: url('./assets/img/viajeSolo.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 mr-10">
           <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Viaje solo</h3>
         </div>
       </div>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>TravellRoulette</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<meta name="theme-color" content="#712cf9">
+
+  <style>
+    body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    #contenedorCarrousel{
+        padding-top: 90px;
+    }
+    #buscar,#btnBuscar{
+          border-radius: 20px;
+        }
+  </style>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink bg-black" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand font-bold text-white" href="#page-top">TravellRoulette</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-bold text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">Acceder</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="./registro.html">Registro</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="filtros.html">Filtros</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="ciudades.html">Ciudades</a></li>
+                <li class="nav-item"><a class="nav-link font-bold text-white" href="contacto.html">Contacto</a></li>
+            </ul>
+            <form action="" class="flex items-center justify-end">
+                <input type="search" name="buscar" id="buscar" class="border border-white rounded-l-md px-3 py-2 focus:outline-none bg-white text-black" placeholder="Buscar">
+                <input type="submit" id="btnBuscar" value="Buscar" class="bg-white text-black rounded-r-md px-4 py-2 cursor-pointer ">
+            </form>
+            
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row featurette" id="contenedorCarrousel">
+        <div class="col-md-5">
+            <h2 class="featurette-heading">Lugares Unicos<br><span class="text-muted">Las 7 maravillas del mundo</span></h2>
+            <p class="lead">
+                Las Siete Maravillas del Mundo Moderno son una lista de obras arquitectónicas 
+                y escultóricas contemporáneas que representan el ingenio humano y la belleza en diferentes partes del mundo.
+                <ul class="lead">
+                    <li>Muralla China</li>
+                    <li>Petra</li>
+                    <li>El Coliseo Romano</li>
+                    <li>Chichen Itza de Mexico</li>
+                    <li>El Machu Pichu de Perú</li>
+                    <li>El Cristo Redentor</li>
+                    <li>El TajMahal</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <!--CARROUSEL-->
+            <div id="carouselMaravillas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/maravillasMundo/murallaChina.jpg" class="d-block w-100 img-fluid" style="height: 400px;" 
+                        alt="La gran muralla china" title="La gran muralla china">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">La gran muralla china</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/maravillasMundo/jordania.jpg" class="d-block w-100 img-fluid" style="height: 400px;"
+                         alt="Petra" title="Petra">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Petra Jordania</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/maravillasMundo/coliseoRomano.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;"
+                         alt="Coliseo Romano" title="Coliseo Romano">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">El Coliseo Romano</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/maravillasMundo/chichenItza.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;"
+                         alt="Chichen Itza" title="Chichen Itza">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Chichen Itza</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/maravillasMundo/machuPichu.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;"
+                         alt="Machu Pichu" title="Machu Pichu">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Machu Pichu</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/maravillasMundo/cristoRedentor.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;"
+                         alt="Cristo Redentor" title="Cristo Redentor">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Cristo Redentor</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/maravillasMundo/tajMahal.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;"
+                         alt="Taj Mahal" title="Taj Mahal">
+                         <div class="carousel-caption d-none d-md-block">
+                            <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">El TajMahal</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMaravillas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMaravillas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-6">
+        <!--CARROUSEL-->
+        <div id="carouselCiudades" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./assets/img/ciudades/paris.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" 
+                    alt="Paris" title="París">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">París, Francia</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ciudades/nuevaYork.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" 
+                    alt="Nueva York" title="Nueva York">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Nueva York, Estados Unidos</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ciudades/roma.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" 
+                    alt="Roma" title="Roma">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Roma, Italia</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/ciudades/tokio.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" 
+                    alt="Tokio" title="Tokio">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Tokio, Japón</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ciudades/londres.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" 
+                    alt="Londres" title="Londres">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Londres, Reino Unido</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/ciudades/estanbul.jpg" class="d-block w-100 img-fluid" style="height: 400px; object-fit: cover;" 
+                    alt="Estambul" title="Estambul">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="background-color: rgba(0, 0, 0, 0.5); color: white;">Estambul, Turquía</h5>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCiudades" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCiudades" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <h2 class="featurette-heading">Ciudades emblemáticas <br><span class="text-muted">Las 6 ciudades mas emblemáticas del mundo</span></h2>
+        <p class="lead">París, Nueva York, Roma, Tokio, Londres y Estambul son destinos emblemáticos 
+            que cautivan con su historia y vitalidad. Desde los íconos como la Torre Eiffel y 
+            el Coliseo Romano hasta la modernidad de Times Square y la mezcla cultural de Estambul, 
+            estas ciudades ofrecen una experiencia inigualable.</p>
+    </div>
+</div>
+</div>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2023 Marcos Cobo</p>
+    </footer>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+</body>
+</html>
