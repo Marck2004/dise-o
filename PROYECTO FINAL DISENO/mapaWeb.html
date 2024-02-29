@@ -33,6 +33,11 @@
         .links{
             text-decoration: none;
         }
+        @media (max-width: 768px) {
+      .fixed-bottom-mobile {
+        position: relative;
+      }
+    }
     </style>
     
 </head>
@@ -68,8 +73,14 @@
         </div>
     </nav>
 
-    <div class="container p-5">
+    <div class="container p-5 ">
+        
         <ul class="mt-5 listas">
+            <p class="mt-5">
+                <img src="./assets/img/casa-icono-silueta.png" alt="caseta" style="width: 20px;height: 20px;">  
+                <a href="index.html" class="text-decoration-none">Inicio</a> &gt; Mapa web
+              </p>
+              
             <li><a href="index.html" class="links">Inicio</a></li>
             <hr>
                     <li><a href="login.html" class="links">Login</a></li>
@@ -88,7 +99,7 @@
     </div>
     
 
-    <div class="container">
+    <div class="container fixed-bottom fixed-bottom-mobile">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="./login.html" class="nav-link px-2 text-body-secondary">Iniciar Sesion</a></li>
@@ -96,6 +107,7 @@
             <li class="nav-item"><a href="./filtros.html" class="nav-link px-2 text-body-secondary">Filtros</a></li>
             <li class="nav-item"><a href="./ciudades.html" class="nav-link px-2 text-body-secondary">Ciudades</a></li>
             <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+            <li class="nav-item"><a href="mapaWeb.html" class="nav-link px-2 text-body-secondary">Mapa Web</a></li>
           </ul>
           <p class="text-center text-body-secondary">&copy; 2023 Marcos Cobo</p>
         </footer>
