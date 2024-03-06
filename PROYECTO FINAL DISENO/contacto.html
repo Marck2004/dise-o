@@ -48,6 +48,7 @@
             text-decoration: none;
             color: black;
         }
+
     </style>
     
 </head>
@@ -61,6 +62,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link font-bold text-white" href="mapaWeb.html">Mapa web</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle font-bold text-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">Acceder</a>
                         <ul class="dropdown-menu">
@@ -72,7 +74,6 @@
                     <li class="nav-item"><a class="nav-link font-bold text-white" href="filtros.html">Filtros</a></li>
                     <li class="nav-item"><a class="nav-link font-bold text-white" href="ciudades.html">Ciudades</a></li>
                     <li class="nav-item"><a class="nav-link font-bold text-white" href="contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link font-bold text-white" href="mapaWeb.html">Mapa web</a></li>
                 </ul>
                 <form action="" class="flex items-center justify-end">
                     <input type="search" name="buscar" id="buscar" class="border border-white rounded-l-md px-3 py-2 focus:outline-none bg-white text-black" placeholder="Buscar">
@@ -82,12 +83,14 @@
             </div>
         </div>
     </nav>
+    
 
     <section class="signup-section mt-5" id="signup">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 <p class="mt-5">
-                    <img src="./assets/img/casa-icono-silueta.png" alt="caseta" style="width: 20px;height: 20px;">  <a href="index.html" class="text-decoration-none">Inicio</a> &gt; Contacto
+                    <img src="./assets/img/casa-icono-silueta.png" title="icono de casa" alt="caseta" style="width: 20px;height: 20px;">
+                      <a href="index.html" class="text-decoration-none">Inicio</a> &gt; Contacto
                   </p>
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
                     <i class="far fa-paper-plane fa-2x text-black"></i>
@@ -96,7 +99,8 @@
                     <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
     
                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Introduce un email" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                            <div class="col">
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Introduce un email" aria-label="Enter email address..." data-sb-validations="required,email" /></div>
                             <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Contacta!</button></div>
                         </div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
